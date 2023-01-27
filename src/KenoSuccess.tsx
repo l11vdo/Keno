@@ -26,7 +26,7 @@ const KenoSuccess = () => {
           </View>
           <View style={styles.selectionContainer}>
             <Text style={styles.selectionText}>
-              Your selection: {kenoNumbers.sort().toString()}
+              Your selection: {kenoNumbers.sort((a, b) => a - b).toString()}
             </Text>
             <Text style={styles.selectionText}>
               Your stake: {kenoBet.toString()}
