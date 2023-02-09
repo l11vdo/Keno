@@ -20,8 +20,8 @@ const App = () => {
     height: '100%',
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
-  const [kenoNumbers, setKenoNumbers] = useState<Number[]>([]);
-  const [kenoBet, setKenoBet] = useState<Number>(0);
+  const [kenoNumbers, setKenoNumbers] = useState<number[]>([]);
+  const [kenoBet, setKenoBet] = useState<number>(0);
   return (
     <KenoContext.Provider
       value={{kenoNumbers, setKenoNumbers, kenoBet, setKenoBet}}>
